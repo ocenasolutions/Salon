@@ -170,7 +170,7 @@ export default function ReportsPage() {
                   <DollarSign className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-serif font-bold text-primary">${reportsData.totalSales.toFixed(2)}</div>
+                  <div className="text-3xl font-serif font-bold text-primary">₹{reportsData.totalSales.toFixed(2)}</div>
                   <p className="text-xs text-muted-foreground">{PERIOD_LABELS[selectedPeriod]} performance</p>
                 </CardContent>
               </Card>
@@ -193,7 +193,7 @@ export default function ReportsPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-3xl font-serif font-bold text-primary">
-                    $
+                    ₹
                     {reportsData.totalBills > 0 ? (reportsData.totalSales / reportsData.totalBills).toFixed(2) : "0.00"}
                   </div>
                   <p className="text-xs text-muted-foreground">Per transaction</p>
@@ -318,7 +318,7 @@ export default function ReportsPage() {
                             </div>
                           </div>
                           <div className="text-right">
-                            <div className="text-lg font-semibold text-primary">${pkg.value.toFixed(2)}</div>
+                            <div className="text-lg font-semibold text-primary">₹{pkg.value.toFixed(2)}</div>
                             <Badge variant="outline">{pkg.percentage}%</Badge>
                           </div>
                         </div>

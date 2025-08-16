@@ -123,7 +123,7 @@ export default function EditBillDialog({ open, onOpenChange, bill, packages, onS
                     <p className="text-sm text-muted-foreground line-clamp-2">{pkg.description}</p>
                   </div>
                   <div className="text-right">
-                    <span className="text-lg font-semibold text-primary">${pkg.price.toFixed(2)}</span>
+                    <span className="text-lg font-semibold text-primary">₹{pkg.price.toFixed(2)}</span>
                   </div>
                 </div>
               ))}
@@ -134,7 +134,7 @@ export default function EditBillDialog({ open, onOpenChange, bill, packages, onS
             <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
               <div className="flex items-center justify-between">
                 <span className="text-lg font-semibold">Updated Total:</span>
-                <span className="text-2xl font-serif font-bold text-primary">${calculateTotal().toFixed(2)}</span>
+                <span className="text-2xl font-serif font-bold text-primary">₹{calculateTotal().toFixed(2)}</span>
               </div>
               <p className="text-sm text-muted-foreground mt-1">
                 {selectedPackages.length} package{selectedPackages.length !== 1 ? "s" : ""} selected

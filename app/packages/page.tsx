@@ -154,7 +154,7 @@ export default function PackagesPage() {
                 <CardContent>
                   <CardDescription className="mb-4 leading-relaxed">{pkg.description}</CardDescription>
                   <div className="flex items-center justify-between">
-                    <span className="text-3xl font-serif font-bold text-primary">${pkg.price}</span>
+                    <span className="text-3xl font-serif font-bold text-primary">₹{pkg.price}</span>
                     <span className="text-sm text-muted-foreground">
                       Created {new Date(pkg.createdAt).toLocaleDateString()}
                     </span>

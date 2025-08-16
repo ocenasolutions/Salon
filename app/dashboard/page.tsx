@@ -148,7 +148,7 @@ export default function DashboardPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-serif font-bold text-primary">
-                    ${analytics.todaysTotalSales.toFixed(2)}
+                    ₹{analytics.todaysTotalSales.toFixed(2)}
                   </div>
                   <p className="text-xs text-muted-foreground">
                     {analytics.todaysBillsCount} bill{analytics.todaysBillsCount !== 1 ? "s" : ""} today
@@ -163,7 +163,7 @@ export default function DashboardPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-serif font-bold text-primary">
-                    ${analytics.highestBillToday ? analytics.highestBillToday.totalAmount.toFixed(2) : "0.00"}
+                    ₹{analytics.highestBillToday ? analytics.highestBillToday.totalAmount.toFixed(2) : "0.00"}
                   </div>
                   <p className="text-xs text-muted-foreground">
                     {analytics.highestBillToday ? "Peak transaction" : "No bills today"}
@@ -205,7 +205,7 @@ export default function DashboardPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-3xl font-serif font-bold text-primary mb-2">
-                    ${analytics.thisWeeksTotalSales.toFixed(2)}
+                    ₹{analytics.thisWeeksTotalSales.toFixed(2)}
                   </div>
                   <div className="flex items-center gap-2">
                     {analytics.thisWeeksTotalSales >= analytics.todaysTotalSales ? (
@@ -227,7 +227,7 @@ export default function DashboardPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-3xl font-serif font-bold text-primary mb-2">
-                    ${analytics.thisMonthsTotalSales.toFixed(2)}
+                    ₹{analytics.thisMonthsTotalSales.toFixed(2)}
                   </div>
                   <div className="flex items-center gap-2">
                     {analytics.thisMonthsTotalSales >= analytics.thisWeeksTotalSales ? (
@@ -293,7 +293,7 @@ export default function DashboardPage() {
                           <div className="flex items-center gap-3 mb-2">
                             <h4 className="font-semibold">Bill #{bill._id?.toString().slice(-6).toUpperCase()}</h4>
                             <span className="text-2xl font-serif font-bold text-primary">
-                              ${bill.totalAmount.toFixed(2)}
+                              ₹{bill.totalAmount.toFixed(2)}
                             </span>
                           </div>
                           <div className="flex items-center gap-2 mb-2">

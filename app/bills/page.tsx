@@ -187,7 +187,7 @@ export default function BillsPage() {
                       </CardDescription>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-3xl font-serif font-bold text-primary">${bill.totalAmount.toFixed(2)}</span>
+                      <span className="text-3xl font-serif font-bold text-primary">₹{bill.totalAmount.toFixed(2)}</span>
                       {isEditable(bill, index) && (
                         <div className="flex gap-1 ml-4">
                           <Button
@@ -230,7 +230,7 @@ export default function BillsPage() {
                     ))}
                     <div className="flex items-center justify-between pt-2 border-t border-border/40">
                       <span className="text-lg font-semibold">Total Amount:</span>
-                      <span className="text-2xl font-serif font-bold text-primary">${bill.totalAmount.toFixed(2)}</span>
+                      <span className="text-2xl font-serif font-bold text-primary">₹{bill.totalAmount.toFixed(2)}</span>
                     </div>
                   </div>
                   {!isEditable(bill, index) && (

@@ -134,7 +134,7 @@ export default function EditPackageDialog({ open, onOpenChange, package: pkg, on
 
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="edit-price">Price ($)</Label>
+              <Label htmlFor="edit-price">Price (₹)</Label>
               <Input
                 id="edit-price"
                 type="number"

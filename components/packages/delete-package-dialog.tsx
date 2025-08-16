@@ -70,7 +70,7 @@ export default function DeletePackageDialog({ open, onOpenChange, package: pkg, 
           <div className="bg-muted/50 p-4 rounded-lg">
             <h4 className="font-semibold mb-1">{pkg.name}</h4>
             <p className="text-sm text-muted-foreground mb-2">{pkg.description}</p>
-            <p className="text-lg font-semibold text-primary">${pkg.price}</p>
+            <p className="text-lg font-semibold text-primary">₹{pkg.price}</p>
           </div>
 
           <p className="text-sm text-muted-foreground">
