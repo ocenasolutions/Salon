@@ -1,0 +1,1412 @@
+[
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37451"
+    },
+    "name": "Men Threading",
+    "description": "Professional threading service for men",
+    "price": 100,
+    "type": "Threading",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37452"
+    },
+    "name": "Men Full Arms Waxing",
+    "description": "Complete arms waxing service for men",
+    "price": 800,
+    "priceRange": "800-1000",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37453"
+    },
+    "name": "Men Half Legs Waxing",
+    "description": "Half legs waxing service for men",
+    "price": 550,
+    "priceRange": "550-700",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37454"
+    },
+    "name": "Men Back Waxing",
+    "description": "Back waxing service for men",
+    "price": 600,
+    "priceRange": "600-800",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37455"
+    },
+    "name": "Men Under Arms Waxing",
+    "description": "Under arms waxing service for men",
+    "price": 300,
+    "priceRange": "300-400",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37456"
+    },
+    "name": "Men Full Body Waxing",
+    "description": "Complete body waxing service for men",
+    "price": 3000,
+    "priceRange": "3000-4000",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37457"
+    },
+    "name": "Men Chest Trim",
+    "description": "Chest hair trimming service for men",
+    "price": 500,
+    "type": "Grooming",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37458"
+    },
+    "name": "Men Back Trim",
+    "description": "Back hair trimming service for men",
+    "price": 1500,
+    "type": "Grooming",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37459"
+    },
+    "name": "Men Stomach Trim",
+    "description": "Stomach hair trimming service for men",
+    "price": 1000,
+    "type": "Grooming",
+    "category": "BODY ESSENTIALS - MEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37460"
+    },
+    "name": "Women Threading",
+    "description": "Professional threading service for women",
+    "price": 100,
+    "type": "Threading",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37461"
+    },
+    "name": "Women Eye Brow",
+    "description": "Eyebrow shaping service for women",
+    "price": 50,
+    "type": "Threading",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37462"
+    },
+    "name": "Women Forehead",
+    "description": "Forehead threading service for women",
+    "price": 50,
+    "type": "Threading",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37463"
+    },
+    "name": "Women Sides",
+    "description": "Side face threading service for women",
+    "price": 50,
+    "type": "Threading",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37464"
+    },
+    "name": "Women Upper Lips",
+    "description": "Upper lip threading service for women",
+    "price": 50,
+    "type": "Threading",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37465"
+    },
+    "name": "Women Chin & Cheeks",
+    "description": "Chin and cheek threading service for women",
+    "price": 100,
+    "type": "Threading",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37466"
+    },
+    "name": "Women Body Polishing",
+    "description": "Complete body polishing treatment for women",
+    "price": 4000,
+    "type": "Body Treatment",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37467"
+    },
+    "name": "Women Full Arms Waxing",
+    "description": "Complete arms waxing service for women",
+    "price": 500,
+    "priceRange": "500-800",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37468"
+    },
+    "name": "Women Half Arms Waxing",
+    "description": "Half arms waxing service for women",
+    "price": 350,
+    "priceRange": "350-650",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37469"
+    },
+    "name": "Women Under Arms Waxing",
+    "description": "Under arms waxing service for women",
+    "price": 200,
+    "priceRange": "200-400",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37470"
+    },
+    "name": "Women Full Legs Waxing",
+    "description": "Complete legs waxing service for women",
+    "price": 700,
+    "priceRange": "700-650",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37471"
+    },
+    "name": "Women Half Legs Waxing",
+    "description": "Half legs waxing service for women",
+    "price": 450,
+    "priceRange": "450-2000",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37472"
+    },
+    "name": "Women Brazilian Hot Wax",
+    "description": "Brazilian hot wax service for women",
+    "price": 1500,
+    "priceRange": "1500-4400",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37473"
+    },
+    "name": "Women Face Wax",
+    "description": "Facial waxing service for women",
+    "price": 200,
+    "priceRange": "200-400",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37474"
+    },
+    "name": "Women Face Wax",
+    "description": "Facial waxing service for women",
+    "price": 300,
+    "priceRange": "300-600",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37475"
+    },
+    "name": "Women Stomach Hot Wax",
+    "description": "Stomach hot wax service for women",
+    "price": 500,
+    "priceRange": "500-700",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37476"
+    },
+    "name": "Women Back Wax",
+    "description": "Back waxing service for women",
+    "price": 150,
+    "priceRange": "150-150",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37477"
+    },
+    "name": "Women Strip Locks",
+    "description": "Strip locks waxing service for women",
+    "price": 100,
+    "priceRange": "100-2000",
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37478"
+    },
+    "name": "Women Chin Wax",
+    "description": "Chin waxing service for women",
+    "price": 1800,
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37479"
+    },
+    "name": "Women Full Body Waxing",
+    "description": "Complete body waxing service for women",
+    "price": 2500,
+    "type": "Waxing",
+    "category": "BODY ESSENTIALS - WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37480"
+    },
+    "name": "Hair Cut",
+    "description": "Professional hair cutting service",
+    "price": 800,
+    "type": "Hair Cut",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37481"
+    },
+    "name": "Hair Trim",
+    "description": "Hair trimming service",
+    "price": 600,
+    "type": "Hair Trim",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37482"
+    },
+    "name": "Hair Wash",
+    "description": "Professional hair washing service",
+    "price": 300,
+    "type": "Hair Wash",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37483"
+    },
+    "name": "Wash & Blow Dry",
+    "description": "Hair wash with blow dry service",
+    "price": 600,
+    "type": "Hair Styling",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37484"
+    },
+    "name": "Split and Removal",
+    "description": "Split ends removal treatment",
+    "price": 600,
+    "type": "Hair Treatment",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37485"
+    },
+    "name": "Baby Hair Cut (under 5 years)",
+    "description": "Hair cutting service for children under 5 years",
+    "price": 250,
+    "type": "Hair Cut",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37486"
+    },
+    "name": "Flat Ironing",
+    "description": "Hair straightening with flat iron",
+    "price": 800,
+    "type": "Hair Styling",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37487"
+    },
+    "name": "Hair Crimping",
+    "description": "Hair crimping styling service",
+    "price": 800,
+    "type": "Hair Styling",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37488"
+    },
+    "name": "Hair Curls",
+    "description": "Hair curling styling service",
+    "price": 800,
+    "type": "Hair Styling",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37489"
+    },
+    "name": "Head Massage",
+    "description": "Relaxing head massage service",
+    "price": 800,
+    "type": "Massage",
+    "category": "HAIR WOMEN",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37490"
+    },
+    "name": "Root Touch up",
+    "description": "Root color touch up service",
+    "price": 1500,
+    "type": "Hair Color",
+    "category": "HAIR COLOUR",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37491"
+    },
+    "name": "Global Colour",
+    "description": "Complete hair color transformation",
+    "price": 5500,
+    "type": "Hair Color",
+    "category": "HAIR COLOUR",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37492"
+    },
+    "name": "Hair Polishing",
+    "description": "Hair polishing treatment for shine",
+    "price": 6000,
+    "type": "Hair Treatment",
+    "category": "HAIR COLOUR",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37493"
+    },
+    "name": "Balayage Hair Colour",
+    "description": "Balayage hair coloring technique",
+    "price": 7500,
+    "type": "Hair Color",
+    "category": "HAIR COLOUR",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37494"
+    },
+    "name": "Ombre Hair Colour",
+    "description": "Ombre hair coloring technique",
+    "price": 7000,
+    "type": "Hair Color",
+    "category": "HAIR COLOUR",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37495"
+    },
+    "name": "Highlights (Per Streak)",
+    "description": "Hair highlighting per streak service",
+    "price": 500,
+    "type": "Hair Color",
+    "category": "HAIR COLOUR",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37496"
+    },
+    "name": "Deep Conditioning",
+    "description": "Deep conditioning hair treatment",
+    "price": 800,
+    "type": "Hair Treatment",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37497"
+    },
+    "name": "Regular Hair Spa",
+    "description": "Regular hair spa treatment",
+    "price": 1200,
+    "type": "Hair Spa",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37498"
+    },
+    "name": "Advance Hair Spa",
+    "description": "Advanced hair spa treatment with premium care",
+    "price": 2500,
+    "type": "Hair Spa",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37499"
+    },
+    "name": "Hair Rebonding",
+    "description": "Hair rebonding straightening treatment",
+    "price": 7000,
+    "type": "Hair Treatment",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37500"
+    },
+    "name": "Hair Smoothening",
+    "description": "Hair smoothening treatment for frizz control",
+    "price": 6000,
+    "type": "Hair Treatment",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37501"
+    },
+    "name": "Moisture Therapy",
+    "description": "Intensive moisture therapy for dry hair",
+    "price": 7500,
+    "type": "Hair Treatment",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37502"
+    },
+    "name": "Kerabond",
+    "description": "Kerabond hair strengthening treatment",
+    "price": 9000,
+    "type": "Hair Treatment",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37503"
+    },
+    "name": "Keratin Treatment",
+    "description": "Professional keratin hair treatment",
+    "price": 7000,
+    "type": "Hair Treatment",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37504"
+    },
+    "name": "Botox Treatment",
+    "description": "Hair botox treatment for damaged hair",
+    "price": 9000,
+    "type": "Hair Treatment",
+    "category": "HAIR SPA & TREATMENTS",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37505"
+    },
+    "name": "Party Make-Up Basic",
+    "description": "Basic party makeup service",
+    "price": 5000,
+    "priceRange": "5000-3000",
+    "type": "Party Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37506"
+    },
+    "name": "Party Make-Up HD",
+    "description": "HD party makeup service",
+    "price": 6000,
+    "type": "Party Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37507"
+    },
+    "name": "Bridal Make-Up Basic",
+    "description": "Basic bridal makeup service",
+    "price": 15000,
+    "type": "Bridal Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37508"
+    },
+    "name": "Bridal Make-Up HD",
+    "description": "HD bridal makeup service",
+    "price": 25000,
+    "type": "Bridal Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37509"
+    },
+    "name": "Engagement Make-Up Basic",
+    "description": "Basic engagement makeup service",
+    "price": 8500,
+    "type": "Engagement Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37510"
+    },
+    "name": "Engagement Make-Up HD",
+    "description": "HD engagement makeup service",
+    "price": 9500,
+    "type": "Engagement Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37511"
+    },
+    "name": "Reception Make-Up Basic",
+    "description": "Basic reception makeup service",
+    "price": 9500,
+    "type": "Reception Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37512"
+    },
+    "name": "Reception Make-Up HD",
+    "description": "HD reception makeup service",
+    "price": 11000,
+    "type": "Reception Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37513"
+    },
+    "name": "Fantasy Make-Up Basic",
+    "description": "Basic fantasy makeup service",
+    "price": 7500,
+    "type": "Fantasy Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37514"
+    },
+    "name": "Fantasy Make-Up HD",
+    "description": "HD fantasy makeup service",
+    "price": 8500,
+    "type": "Fantasy Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37515"
+    },
+    "name": "Ramp Make-Up Basic",
+    "description": "Basic ramp makeup service",
+    "price": 8000,
+    "type": "Ramp Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37516"
+    },
+    "name": "Ramp Make-Up HD",
+    "description": "HD ramp makeup service",
+    "price": 9900,
+    "type": "Ramp Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37517"
+    },
+    "name": "Eye Make-Up Basic",
+    "description": "Basic eye makeup service",
+    "price": 1000,
+    "type": "Eye Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37518"
+    },
+    "name": "Eye Make-Up HD",
+    "description": "HD eye makeup service",
+    "price": 1500,
+    "type": "Eye Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37519"
+    },
+    "name": "Trial Make-Up Basic",
+    "description": "Basic trial makeup service",
+    "price": 2600,
+    "type": "Trial Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37520"
+    },
+    "name": "Trial Make-Up HD",
+    "description": "HD trial makeup service",
+    "price": 2900,
+    "type": "Trial Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37521"
+    },
+    "name": "Grooms Make-Up Basic",
+    "description": "Basic groom makeup service",
+    "price": 5500,
+    "type": "Groom Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37522"
+    },
+    "name": "Grooms Make-Up HD",
+    "description": "HD groom makeup service",
+    "price": 7500,
+    "type": "Groom Makeup",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68a01edd2b8aae2e74d37523"
+    },
+    "name": "Saree Drape/Dress up",
+    "description": "Saree draping and dress up service",
+    "price": 800,
+    "type": "Styling",
+    "category": "MAKEUP",
+    "userId": {
+      "$oid": "68a01d81f97ca3aff9c1b28d"
+    },
+    "createdAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-16T06:02:05.445Z"
+    }
+  }
+]

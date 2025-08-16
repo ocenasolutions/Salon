@@ -1,10 +1,12 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Plus, PackageIcon, Edit, Trash2, Sparkles } from "lucide-react"
+import { Input } from "@/components/ui/input"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Plus, PackageIcon, Edit, Trash2, Sparkles, Search, Filter } from "lucide-react"
 import type { Package } from "@/lib/models/Package"
 import CreatePackageDialog from "@/components/packages/create-package-dialog"
 import EditPackageDialog from "@/components/packages/edit-package-dialog"
@@ -17,6 +19,11 @@ export default function PackagesPage() {
   const [showCreateDialog, setShowCreateDialog] = useState(false)
   const [editingPackage, setEditingPackage] = useState<Package | null>(null)
   const [deletingPackage, setDeletingPackage] = useState<Package | null>(null)
+
+  const [searchTerm, setSearchTerm] = useState("")
+  const [priceFilter, setPriceFilter] = useState("all")
+  const [typeFilter, setTypeFilter] = useState("all")
+  const [sortBy, setSortBy] = useState("name")
 
   const fetchPackages = async () => {
     try {
@@ -56,6 +63,48 @@ export default function PackagesPage() {
     fetchPackages()
     setDeletingPackage(null)
   }
+
+  const filteredAndSortedPackages = useMemo(() => {
+    const filtered = packages.filter((pkg) => {
+      // Search by name
+      const matchesSearch = pkg.name.toLowerCase().includes(searchTerm.toLowerCase())
+
+      // Filter by type
+      const matchesType = typeFilter === "all" || pkg.type.toLowerCase() === typeFilter.toLowerCase()
+
+      // Filter by price range
+      let matchesPrice = true
+      if (priceFilter === "under50") {
+        matchesPrice = pkg.price < 50
+      } else if (priceFilter === "50to100") {
+        matchesPrice = pkg.price >= 50 && pkg.price <= 100
+      } else if (priceFilter === "over100") {
+        matchesPrice = pkg.price > 100
+      }
+
+      return matchesSearch && matchesType && matchesPrice
+    })
+
+    // Sort packages
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case "name":
+          return a.name.localeCompare(b.name)
+        case "price-low":
+          return a.price - b.price
+        case "price-high":
+          return b.price - a.price
+        case "date-new":
+          return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        case "date-old":
+          return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
+        default:
+          return 0
+      }
+    })
+
+    return filtered
+  }, [packages, searchTerm, priceFilter, typeFilter, sortBy])
 
   if (loading) {
     return (
@@ -107,26 +156,125 @@ export default function PackagesPage() {
           </Button>
         </div>
 
+        <Card className="border-border/40 mb-8">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Filter className="h-5 w-5" />
+              Search & Filter Packages
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+              {/* Search Input */}
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input
+                  placeholder="Search by name..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="pl-10"
+                />
+              </div>
+
+              {/* Type Filter */}
+              <Select value={typeFilter} onValueChange={setTypeFilter}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Filter by type" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Types</SelectItem>
+                  <SelectItem value="basic">Basic</SelectItem>
+                  <SelectItem value="premium">Premium</SelectItem>
+                </SelectContent>
+              </Select>
+
+              {/* Price Range Filter */}
+              <Select value={priceFilter} onValueChange={setPriceFilter}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Filter by price" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Prices</SelectItem>
+                  <SelectItem value="under50">Under ₹50</SelectItem>
+                  <SelectItem value="50to100">₹50 - ₹100</SelectItem>
+                  <SelectItem value="over100">Over ₹100</SelectItem>
+                </SelectContent>
+              </Select>
+
+              {/* Sort Options */}
+              <Select value={sortBy} onValueChange={setSortBy}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Sort by" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="name">Name (A-Z)</SelectItem>
+                  <SelectItem value="price-low">Price (Low to High)</SelectItem>
+                  <SelectItem value="price-high">Price (High to Low)</SelectItem>
+                  <SelectItem value="date-new">Newest First</SelectItem>
+                  <SelectItem value="date-old">Oldest First</SelectItem>
+                </SelectContent>
+              </Select>
+
+              {/* Clear Filters */}
+              <Button
+                variant="outline"
+                onClick={() => {
+                  setSearchTerm("")
+                  setPriceFilter("all")
+                  setTypeFilter("all")
+                  setSortBy("name")
+                }}
+                className="w-full"
+              >
+                Clear Filters
+              </Button>
+            </div>
+
+            {/* Results Count */}
+            <div className="mt-4 text-sm text-muted-foreground">
+              Showing {filteredAndSortedPackages.length} of {packages.length} packages
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Packages Grid */}
-        {packages.length === 0 ? (
+        {filteredAndSortedPackages.length === 0 ? (
           <Card className="border-border/40">
             <CardContent className="flex flex-col items-center justify-center py-16">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <PackageIcon className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-serif font-semibold mb-2">No packages yet</h3>
+              <h3 className="text-2xl font-serif font-semibold mb-2">
+                {packages.length === 0 ? "No packages yet" : "No packages match your filters"}
+              </h3>
               <p className="text-muted-foreground mb-6 text-center max-w-md">
-                Create your first service package to start managing your salon offerings
+                {packages.length === 0
+                  ? "Create your first service package to start managing your salon offerings"
+                  : "Try adjusting your search terms or filters to find packages"}
               </p>
-              <Button onClick={() => setShowCreateDialog(true)} className="gap-2">
-                <Plus className="h-4 w-4" />
-                Create Your First Package
-              </Button>
+              {packages.length === 0 ? (
+                <Button onClick={() => setShowCreateDialog(true)} className="gap-2">
+                  <Plus className="h-4 w-4" />
+                  Create Your First Package
+                </Button>
+              ) : (
+                <Button
+                  variant="outline"
+                  onClick={() => {
+                    setSearchTerm("")
+                    setPriceFilter("all")
+                    setTypeFilter("all")
+                    setSortBy("name")
+                  }}
+                >
+                  Clear All Filters
+                </Button>
+              )}
             </CardContent>
           </Card>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {packages.map((pkg) => (
+            {filteredAndSortedPackages.map((pkg) => (
               <Card key={pkg._id?.toString()} className="border-border/40 hover:shadow-lg transition-all duration-300">
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between">

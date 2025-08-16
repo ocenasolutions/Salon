@@ -2,10 +2,33 @@ import { type NextRequest, NextResponse } from "next/server"
 import { getDatabase } from "@/lib/mongodb"
 import type { Package } from "@/lib/models/Package"
 import { ObjectId } from "mongodb"
+import jwt from "jsonwebtoken"
+
+export const runtime = "nodejs"
+
+function getUserIdFromToken(request: NextRequest): string | null {
+  try {
+    const authHeader = request.headers.get("authorization")
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      return null
+    }
+
+    const token = authHeader.substring(7)
+    const jwtSecret = process.env.JWT_SECRET
+    if (!jwtSecret) {
+      return null
+    }
+
+    const decoded = jwt.verify(token, jwtSecret) as { userId: string }
+    return decoded.userId
+  } catch (error) {
+    return null
+  }
+}
 
 export async function PUT(request: NextRequest, { params }: { params: { id: string } }) {
   try {
-    const userId = request.headers.get("x-user-id")
+    const userId = getUserIdFromToken(request)
     if (!userId) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
@@ -57,7 +80,7 @@ export async function PUT(request: NextRequest, { params }: { params: { id: stri
 
 export async function DELETE(request: NextRequest, { params }: { params: { id: string } }) {
   try {
-    const userId = request.headers.get("x-user-id")
+    const userId = getUserIdFromToken(request)
     if (!userId) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }

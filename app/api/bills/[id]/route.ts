@@ -3,13 +3,24 @@ import { getDatabase } from "@/lib/mongodb"
 import type { Bill, BillItem } from "@/lib/models/Bill"
 import type { Package } from "@/lib/models/Package"
 import { ObjectId } from "mongodb"
+import { verifyToken } from "@/lib/auth"
+
+export const runtime = "nodejs"
 
 export async function PUT(request: NextRequest, { params }: { params: { id: string } }) {
   try {
-    const userId = request.headers.get("x-user-id")
-    if (!userId) {
+    const authHeader = request.headers.get("authorization")
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
+
+    const token = authHeader.substring(7)
+    const decoded = verifyToken(token)
+    if (!decoded) {
+      return NextResponse.json({ error: "Invalid token" }, { status: 401 })
+    }
+
+    const userId = decoded.userId
 
     const { packageIds } = await request.json()
 
@@ -94,10 +105,18 @@ export async function PUT(request: NextRequest, { params }: { params: { id: stri
 
 export async function DELETE(request: NextRequest, { params }: { params: { id: string } }) {
   try {
-    const userId = request.headers.get("x-user-id")
-    if (!userId) {
+    const authHeader = request.headers.get("authorization")
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
+
+    const token = authHeader.substring(7)
+    const decoded = verifyToken(token)
+    if (!decoded) {
+      return NextResponse.json({ error: "Invalid token" }, { status: 401 })
+    }
+
+    const userId = decoded.userId
 
     const db = await getDatabase()
     const billsCollection = db.collection<Bill>("bills")
